@@ -79,20 +79,46 @@ export const constantRoutes = [
         path: 'dashboard',
         component: () => import('@/views/dashboard/index'),
         name: 'Dashboard',
-        meta: { title: 'Dashboard', icon: 'dashboard', affix: true }
+        meta: { title: '个人中心', icon: 'dashboard', affix: true }
       }
     ]
   },
   {
-    path: '/test',
+    path: '/direct-referral-rewards',
     component: Layout,
-    redirect: '/test',
+    redirect: '/direct-referral-rewards',
     children: [
       {
-        path: 'test',
-        component: () => import('@/views/testrouter/index'),
-        name: 'Dashboard',
-        meta: { title: 'TestRouter', icon: 'dashboard', affix: true }
+        path: 'index',
+        component: () => import("@/views/direct-referral-rewards/index"),
+        name: 'Direct referral rewards',
+        meta: { title: '直推奖励', icon: 'dashboard', affix: true }
+      }
+    ]
+  },
+  {
+    path: '/pool-rewards',
+    component: Layout,
+    redirect: '/pool-rewards',
+    children: [
+      {
+        path: 'index',
+        component: () => import("@/views/poolRewards/index"),
+        name: 'Pool Rewards',
+        meta: { title: '奖池奖励', icon: 'dashboard', affix: true }
+      }
+    ]
+  },
+  {
+    path: '/funding-pool',
+    component: Layout,
+    redirect: '/funding-pool',
+    children: [
+      {
+        path: 'index',
+        component: () => import("@/views/fundingPool/index"),
+        name: 'fundingPool',
+        meta: { title: '奖金池', icon: 'dashboard', affix: true }
       }
     ]
   },
