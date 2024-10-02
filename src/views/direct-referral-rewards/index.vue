@@ -54,7 +54,7 @@
                     <div class="card-panel-description">
                         <div class="card-panel-text">
                             <!-- Shoppings -->
-                            今日已派奖（单位：HAH）
+                            今日已派奖（单位：USDT）
                         </div>
                         <count-to :start-val="0" :end-val="1600" :duration="3600" class="card-panel-num" />
                     </div>
@@ -68,7 +68,7 @@
                     <div class="card-panel-description">
                         <div class="card-panel-text">
                             <!-- Shoppings -->
-                            总派奖（单位：HAH）
+                            总派奖（单位：USDT）
                         </div>
                         <count-to :start-val="0" :end-val="1600" :duration="3600" class="card-panel-num" />
                     </div>
@@ -82,7 +82,7 @@
                     <div class="card-panel-description">
                         <div class="card-panel-text">
                             <!-- Shoppings -->
-                            待派奖（单位：HAH）
+                            待派奖（单位：USDT）
                         </div>
                         <count-to :start-val="0" :end-val="1600" :duration="300" class="card-panel-num" />
                     </div>
@@ -107,13 +107,13 @@
                 <template slot-scope="{row}">
                     <!-- <span class="link-type" @click="handleUpdate(row)">{{ row.title }}</span>
                     <el-tag>{{ row.type | typeFilter }}</el-tag> -->
-                    234.2233HAH
+                    234.2233USDT
                 </template>
             </el-table-column>
             <el-table-column label="今日流水" width="" align="center">
                 <template slot-scope="{row}">
                     <!-- <span>{{ row.author }}</span> -->
-                    232.232HAH
+                    232.232USDT
                 </template>
             </el-table-column>
             <!-- <el-table-column v-if="showReviewer" label="Reviewer" width="110px" align="center">
@@ -124,7 +124,7 @@
             <el-table-column label="总奖励" width="">
                 <template slot-scope="{row}">
                     <!-- <svg-icon v-for="n in + row.importance" :key="n" icon-class="star" class="meta-item__icon" /> -->
-                    232.232HAH
+                    232.232USDT
                 </template>
             </el-table-column>
             <el-table-column label="已发放" align="center" width="95">
@@ -132,7 +132,7 @@
                     <!-- <span v-if="row.pageviews" class="link-type" @click="handleFetchPv(row.pageviews)">{{ row.pageviews
                         }}</span>
                     <span v-else>0</span> -->
-                    232.232HAH
+                    232.232USDT
                 </template>
             </el-table-column>
             <el-table-column label="今日奖励" class-name="status-col" width="">
@@ -140,7 +140,7 @@
                     <!-- <el-tag :type="row.status | statusFilter">
                         {{ row.status }}
                     </el-tag> -->
-                    232.232HAH
+                    232.232USDT
                 </template>
             </el-table-column>
             <el-table-column label="Actions" align="center" width="230" class-name="small-padding fixed-width">
