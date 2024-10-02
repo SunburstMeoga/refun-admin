@@ -1,5 +1,5 @@
 <template>
-  <div :class="className" :style="{height:height,width:width}" />
+  <div :class="className" :style="{ height: height, width: width }" />
 </template>
 
 <script>
@@ -61,7 +61,7 @@ export default {
       this.chart = echarts.init(this.$el, 'macarons')
       this.setOptions(this.chartData)
     },
-    setOptions({ expectedData, actualData } = {}) {
+    setOptions({ expectedData, actualData, pool } = {}) {
       this.chart.setOption({
         xAxis: {
           data: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'],
@@ -90,10 +90,10 @@ export default {
           }
         },
         legend: {
-          data: ['expected', 'actual']
+          data: ['直推奖励', '奖池奖励', '奖金池']
         },
         series: [{
-          name: 'expected', itemStyle: {
+          name: '奖池奖励', itemStyle: {
             normal: {
               color: '#FF005A',
               lineStyle: {
@@ -109,7 +109,7 @@ export default {
           animationEasing: 'cubicInOut'
         },
         {
-          name: 'actual',
+          name: '直推奖励',
           smooth: true,
           type: 'line',
           itemStyle: {
@@ -125,6 +125,26 @@ export default {
             }
           },
           data: actualData,
+          animationDuration: 2800,
+          animationEasing: 'quadraticOut'
+        },
+        {
+          name: '奖金池',
+          smooth: true,
+          type: 'line',
+          itemStyle: {
+            normal: {
+              color: '#3838fa',
+              lineStyle: {
+                color: '#3838fa',
+                width: 2
+              },
+              areaStyle: {
+                color: '#f3f8ff'
+              }
+            }
+          },
+          data: pool,
           animationDuration: 2800,
           animationEasing: 'quadraticOut'
         }]
