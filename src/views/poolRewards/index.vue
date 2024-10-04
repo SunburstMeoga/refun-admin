@@ -35,7 +35,7 @@
 
         <el-table :key="tableKey" v-loading="listLoading" :data="list" border fit highlight-current-row
             style="width: 100%;" @sort-change="sortChange">
-            <el-table-column label="ID" prop="id" sortable="custom" align="center" :class-name="getSortClass('id')">
+            <el-table-column label="ID" width="40px" align="center" :class-name="getSortClass('id')">
                 <template slot-scope="{row}">
                     <span>{{ row.id }}</span>
                 </template>
@@ -51,7 +51,7 @@
                     <!-- <el-tag>{{ row.type | typeFilter }}</el-tag> -->
                 </template>
             </el-table-column>
-            <el-table-column label="用户地址" width="500px" align="center">
+            <el-table-column label="用户地址" width="400px" align="center">
                 <template slot-scope="{row}">
                     <span class="link-type" @click="handleUpdate(row)">0xF0E7a10A038C1f9BeE2Dc473282872144Fcecd2c</span>
                     <!-- <el-tag>{{ row.type | typeFilter }}</el-tag> -->
@@ -62,9 +62,29 @@
                     <span>{{ row.author }}</span>
                 </template>
             </el-table-column>
-            <el-table-column v-if="showReviewer" label="商品金额" align="center">
+            <el-table-column label="商品金额" align="center">
                 <template slot-scope="{row}">
-                    <span style="color:red;"> 234.2233USDT</span>
+                    <span> 234.2233USDT</span>
+                </template>
+            </el-table-column>
+            <el-table-column label="总奖励" align="center">
+                <template slot-scope="{row}">
+                    <span> 234.2233USDT</span>
+                </template>
+            </el-table-column>
+            <el-table-column label="剩余奖励" align="center">
+                <template slot-scope="{row}">
+                    <span> 234.2233USDT</span>
+                </template>
+            </el-table-column>
+            <el-table-column label="已派发奖励" align="center">
+                <template slot-scope="{row}">
+                    <span> 234.2233USDT</span>
+                </template>
+            </el-table-column>
+            <el-table-column label="未派发奖励" align="center">
+                <template slot-scope="{row}">
+                    <span> 234.2233USDT</span>
                 </template>
             </el-table-column>
             <el-table-column label="奖励是否已发放" width="80px">
