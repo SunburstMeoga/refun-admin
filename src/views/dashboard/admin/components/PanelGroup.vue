@@ -44,7 +44,7 @@
       </div>
     </el-col> -->
     <el-col :xs="12" :sm="12" :lg="6" class="card-panel-col">
-      <div class="card-panel" @click="handleSetLineChartData('shoppings')">
+      <div class="card-panel" @click="toShopInfor('shoppings')">
         <div class="card-panel-icon-wrapper icon-shopping">
           <svg-icon icon-class="shopping" class-name="card-panel-icon" />
         </div>
@@ -70,6 +70,11 @@ export default {
   methods: {
     handleSetLineChartData(type) {
       this.$emit('handleSetLineChartData', type)
+    },
+    toShopInfor() {
+      this.$router.push({
+        path: '/tab/index'
+      })
     }
   }
 }
