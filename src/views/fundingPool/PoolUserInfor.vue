@@ -10,7 +10,7 @@
                         <!-- New Visits -->
                         总返利
                     </div>
-                    <count-to :start-val="0" :end-val="102400" :duration="2600" class="card-panel-num" /> USDT
+                    <count-to :start-val="0" :end-val="23" :duration="2600" class="card-panel-num" /> USDT
                     <!-- <div class="card-panel-num">234.23USDT</div> -->
                 </div>
             </div>
@@ -26,7 +26,7 @@
                         剩余返利
                     </div>
                     <!-- <count-to :start-val="0" :end-val="81212" :duration="3000" class="card-panel-num" /> -->
-                    <count-to :start-val="0" :end-val="2434" :duration="2600" class="card-panel-num" /> USDT
+                    <count-to :start-val="0" :end-val="234" :duration="2600" class="card-panel-num" /> USDT
                 </div>
             </div>
         </el-col>
@@ -41,7 +41,7 @@
                         总流水
                     </div>
                     <!-- <count-to :start-val="0" :end-val="81212" :duration="3000" class="card-panel-num" /> -->
-                    <count-to :start-val="0" :end-val="24243" :duration="2600" class="card-panel-num" /> USDT
+                    <count-to :start-val="0" :end-val="32" :duration="2600" class="card-panel-num" /> USDT
                 </div>
             </div>
         </el-col>
@@ -56,7 +56,7 @@
                         今日返利
                     </div>
                     <!-- <count-to :start-val="0" :end-val="81212" :duration="3000" class="card-panel-num" /> -->
-                    <count-to :start-val="0" :end-val="2434" :duration="2600" class="card-panel-num" /> USDT
+                    <count-to :start-val="0" :end-val="123" :duration="2600" class="card-panel-num" /> USDT
                 </div>
             </div>
         </el-col>

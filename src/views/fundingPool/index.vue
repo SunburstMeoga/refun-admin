@@ -47,6 +47,12 @@
                     <span>0xe300567b28348acecea7e1a3d4c4a2d8cde34d508062cae29c4cbbe0ee43c8f7</span>
                 </template>
             </el-table-column>
+            <el-table-column label="订单编号" align="center">
+                <template slot-scope="{row}">
+                    <span>23048209839042890380958</span>
+                    <!-- <el-tag>{{ row.type }}</el-tag> -->
+                </template>
+            </el-table-column>
             <el-table-column label="发放时间" width="150px" align="center">
                 <template slot-scope="{row}">
                     <span>{{ row.timestamp | parseTime('{y}-{m}-{d} {h}:{i}') }}</span>

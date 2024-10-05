@@ -103,7 +103,7 @@
                     账户<span>{{ row.id }}</span>
                 </template>
             </el-table-column>
-            <el-table-column label="总流水" width="">
+            <el-table-column label="总流水" width="" align="center">
                 <template slot-scope="{row}">
                     <!-- <span class="link-type" @click="handleUpdate(row)">{{ row.title }}</span>
                     <el-tag>{{ row.type | typeFilter }}</el-tag> -->
@@ -121,7 +121,7 @@
                     <span style="color:red;">{{ row.reviewer }}</span>
                 </template>
             </el-table-column> -->
-            <el-table-column label="总奖励" width="">
+            <el-table-column label="总奖励" width="" align="center">
                 <template slot-scope="{row}">
                     <!-- <svg-icon v-for="n in + row.importance" :key="n" icon-class="star" class="meta-item__icon" /> -->
                     232.232USDT

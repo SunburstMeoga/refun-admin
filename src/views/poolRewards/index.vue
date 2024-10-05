@@ -51,10 +51,16 @@
                     <!-- <el-tag>{{ row.type | typeFilter }}</el-tag> -->
                 </template>
             </el-table-column>
-            <el-table-column label="用户地址" width="400px" align="center">
+            <!-- <el-table-column label="用户钱包地址" width="400px" align="center">
                 <template slot-scope="{row}">
                     <span class="link-type" @click="handleUpdate(row)">0xF0E7a10A038C1f9BeE2Dc473282872144Fcecd2c</span>
-                    <!-- <el-tag>{{ row.type | typeFilter }}</el-tag> -->
+                    <el-tag>{{ row.type | typeFilter }}</el-tag>
+                </template>
+            </el-table-column> -->
+            <el-table-column label="订单编号" align="center">
+                <template slot-scope="{row}">
+                    <span>23048209839042890380958</span>
+                    <!-- <el-tag>{{ row.type }}</el-tag> -->
                 </template>
             </el-table-column>
             <el-table-column label="商品名" align="center">

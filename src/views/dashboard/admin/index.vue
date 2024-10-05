@@ -2,7 +2,7 @@
   <div class="dashboard-editor-container">
     <github-corner class="github-corner" />
 
-    <panel-group @handleSetLineChartData="handleSetLineChartData" />
+
 
     <el-row style="background:#fff;padding:16px 16px 0;margin-bottom:32px;">
       近七日收益走势
@@ -26,6 +26,8 @@
         </div>
       </el-col>
     </el-row>
+
+    <panel-group @handleSetLineChartData="handleSetLineChartData" />
 
     <!-- <el-row :gutter="8">
       <el-col :xs="{ span: 24 }" :sm="{ span: 24 }" :md="{ span: 24 }" :lg="{ span: 12 }" :xl="{ span: 12 }"

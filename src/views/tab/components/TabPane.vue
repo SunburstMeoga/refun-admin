@@ -17,9 +17,9 @@
       </template>
     </el-table-column>
 
-    <el-table-column label="商品配送地址" align="center">
+    <el-table-column label="订单编号" align="center">
       <template slot-scope="{row}">
-        <span>广东省广州市荔湾区芳村3栋2323</span>
+        <span>23048209839042890380958</span>
         <!-- <el-tag>{{ row.type }}</el-tag> -->
       </template>
     </el-table-column>
