@@ -261,18 +261,18 @@ export const constantRoutes = [
   //     ]
   //   },
 
-  {
-    path: '/tab',
-    component: Layout,
-    children: [
-      {
-        path: 'index',
-        component: () => import('@/views/tab/index'),
-        name: '商城信息',
-        meta: { title: '商城信息', icon: 'tab' }
-      }
-    ]
-  },
+  // {
+  //   path: '/tab',
+  //   component: Layout,
+  //   children: [
+  //     {
+  //       path: 'index',
+  //       component: () => import('@/views/tab/index'),
+  //       name: '商城信息',
+  //       meta: { title: '商城信息', icon: 'tab' }
+  //     }
+  //   ]
+  // },
 
   //   {
   //     path: '/error',
